@@ -20,12 +20,12 @@ public class Principal {
 
             Produto pdt = new Produto();
             Cliente clt = new Cliente();
-            //Funcionario fcr = new Funcionario();
             Gerente grt = new Gerente();
             Atendente atd = new Atendente();
             Vendedor vnd = new Vendedor();
 
-            int resp = Integer.parseInt(JOptionPane.showInputDialog("Digite a opção: Cadastrar produto [1]," +
+            int resp = Integer.parseInt(JOptionPane.showInputDialog(
+                    "Digite a opção: Cadastrar produto [1]," +
                     " Exibir produto [2]," +
                     " Cadastrar cliente [3]," +
                     " Exibir cliente [4]," +
@@ -36,16 +36,13 @@ public class Principal {
                 case 1:
                     System.out.println("A");
                     pdt.cadastrarProduto();
-                    //System.out.println(pdt);
                     produtos.add(pdt);
-                    //System.out.println(produtos);
                     break;
                 case 2:
                     System.out.println("B");
                     for(Produto p: produtos) {
                         p.exibirProduto();
                     }
-                    //pdt.exibirProduto();
                     break;
                 case 3:
                     System.out.println("C");
@@ -57,18 +54,15 @@ public class Principal {
                     for(Cliente c: clientes) {
                         c.exibirCliente();
                     }
-                    //clt.exibirCliente();
                     break;
                 case 5:
                     System.out.println("E");
-                    //fcr.cadastrarFuncionario();
-
                     int respCadFun = Integer.parseInt(JOptionPane.showInputDialog(
                             "Digite a opção: Cadastrar Gerente [1]," +
                             " Cadastrar Atendente [2]," +
                             " Cadastrar Vendedor [3]"));
 
-                    switch (respCadFun){
+                    switch (respCadFun) {
                         case 1:
                             System.out.println("E.G");
                             grt.cadastrarGerente();
@@ -91,14 +85,12 @@ public class Principal {
                     break;
                 case 6:
                     System.out.println("F");
-                    //fcr.exibirFuncionario();
-
                     int respExiFun = Integer.parseInt(JOptionPane.showInputDialog(
                             "Digite a opção: Exibir Gerente [1]," +
                             " Exibir Atendente [2]," +
                             " Exibir Vendedor [3]"));
 
-                    switch (respExiFun){
+                    switch (respExiFun) {
                         case 1:
                             System.out.println("F.G");
                             for(Gerente g: gerentes) {
