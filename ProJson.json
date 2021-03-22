@@ -1,0 +1,2 @@
+{"codigo":1,"nome":"1","custo":1.0,"unidade":"1","marca":"1","categoria":{"nome":"111","tipo":"1","descricao":"1"},"familia":{"nome":"1","tipo":"1"},"fornecedor":{"nome":"1","telefone":"11","contato":"1","end":{}}}
+{"codigo":2,"nome":"2","custo":2.0,"unidade":"2","marca":"2","categoria":{"nome":"2","tipo":"2","descricao":"2222"},"familia":{"nome":"2","tipo":"2"},"fornecedor":{"nome":"2","telefone":"2","contato":"2","end":{"cep":"22","endereco":"2","numero":"2","complemento":"2","bairro":"2","cidade":"2","uf":"22"}}}
